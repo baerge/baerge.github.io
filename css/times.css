@@ -1,0 +1,183 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    /*font-family: font stack required for body text */
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,;
+}
+h1, h2, h3, h4{
+    /*font-family: font stack required for headings */
+     font-family:Georgia, serif;
+}
+p{
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande',
+   'Lucida Sans', Arial, sans-serif;
+    color: var(--dark);
+}
+.container{
+float: left;
+color: black;
+text-decoration: none;  
+
+}
+.subnav{
+   float: right;
+   overflow: auto; 
+   padding: 14px 16px;
+  
+}
+.subnav a{
+    font-weight: bold;
+   color: black;
+   font-size: 12px;
+   padding: 14px;
+   font-family: inherit;
+   margin:0;
+   text-decoration: none;
+}
+.mainnav{
+    overflow: auto;
+    background-color: #333;
+
+}
+.mainnav a{
+    display: table;
+    width: 25%;
+    float: left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px;
+    text-decoration: none;
+    box-shadow: var(--shadow); 
+}
+.masthead{
+    background: brown;
+   text-align: center; 
+   padding: 14px 16px;
+   
+}
+.times-logo{
+    position: absolute;
+    display: block;
+    width: 30%;
+}
+.masthead h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.content{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    left: 0;
+    width: 100%;
+    z-index: 1;   
+}
+.content .story{
+    float: left;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+}
+.story.lead-story{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+h1.story-title{
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 18px;
+   color:black bold;
+
+}
+.story img{
+    display: grid;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+}
+.story p{
+    padding-top: 10px;
+    padding-bottom: 0;   
+}
+.story blockquote{
+    quotes: "\201E" "\201D";
+     color: blue;
+}
+.story blockquote::before{
+    content: open-quote;
+    font-family:Georgia, serif;
+}
+.story blockquote::after{
+    content: close-quote;
+     font-family:Georgia, serif;
+}
+.story p.byline{
+    font-weight: bold;
+}
+p.byline span.author{
+   color: darkgreen;
+}
+p.byline span.pub{
+   color: brown; 
+}
+.foot{
+    margin-top: 2rem;
+    padding: 1rem;  
+}
+.foot p{
+    text-align: center; 
+    color:black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:brown;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+    .container{
+    text-decoration: none; 
+    }
+    .subnav{
+      padding: 14px 16px;
+
+}   
+    .subnav a{
+        font-size: 12px;
+
+    }
+
+    .mainnav a{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 500px) {
+     .content{
+        grid-template-areas:
+        'content. story'
+
+    }
+ }
+
+
+
