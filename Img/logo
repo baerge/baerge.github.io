@@ -1,3 +1,0 @@
-git add logo.png 
-git commit -m "added Assets"
-git push origin Assets
