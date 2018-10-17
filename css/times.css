@@ -67,7 +67,6 @@ text-decoration: none;
    
 }
 .times-logo{
-    <img src="./img/logo.png" alt="MAD&amp;D Logo" class="times-logo" />
     position: absolute;
     display: block;
     width: 30%;
@@ -160,19 +159,19 @@ p.byline span.pub{
     text-decoration: none; 
     }
     .subnav{
-      padding: 14px 16px;
+     
 
 }   
     .subnav a{
-        font-size: 12px;
+       
 
     }
 
     .mainnav a{
-        grid-template-columns: 1fr;
+        grid-template-columns: (4,1fr);
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
      .content{
         grid-template-areas:
         'content. story'
