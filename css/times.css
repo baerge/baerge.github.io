@@ -67,6 +67,7 @@ text-decoration: none;
    
 }
 .times-logo{
+    <img src="./img/logo.png" alt="MAD&amp;D Logo" class="times-logo" />
     position: absolute;
     display: block;
     width: 30%;
